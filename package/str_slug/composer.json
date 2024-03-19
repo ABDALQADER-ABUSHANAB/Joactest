@@ -1,0 +1,19 @@
+{
+    "name": "abedalqader/str_slug",
+    "description": "just new package for make slug strings easy and auto",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "abedalqader",
+            "email": "abdmahmod0011@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "abedalqader\\str_slug\\":"src/"
+        }
+    }
+}

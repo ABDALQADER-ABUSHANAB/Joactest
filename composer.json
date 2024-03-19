@@ -9,9 +9,22 @@
         "laravel/breeze": "^2.0",
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "abedalqader/str_slug":"dev-master"
+
     },
+
+    "repositories": [
+        {
+        "type":"path",
+        "url":"package\\str_slug",
+        "options":{
+            "symlink":true
+        }
+
+    }],
     "require-dev": {
+
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
@@ -27,7 +40,9 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Modules\\": "Modules/"
+            "Modules\\":"Modules/",
+            "abedalqader\\str_slug\\":"package/str_slug/src/"
+
         }
     },
     "autoload-dev": {
@@ -54,7 +69,10 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "provider":[
+                "abedalqader/str_slugStrSlugProvider"
+            ]
         }
     },
     "config": {

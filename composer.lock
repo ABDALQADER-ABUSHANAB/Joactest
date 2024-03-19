@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c184b22c122259ab71dc18c44650162",
+    "content-hash": "aa72fdc345039aaa0797e9e3d23be38f",
     "packages": [
+        {
+            "name": "abedalqader/str_slug",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "package/str_slug",
+                "reference": "f7f8810f0b2adb60a106f878f180c94bda7eafa5"
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "abedalqader",
+                    "email": "abdmahmod0011@gmail.com"
+                }
+            ],
+            "description": "just new package for make slug strings easy and auto",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -9188,7 +9212,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "abedalqader/str_slug": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

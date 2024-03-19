@@ -1,20 +1,16 @@
 <?php
-
-namespace $CLASS_NAMESPACE$;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\RedirectResponse;
+namespace abedalqader\str_slug\Http\Controllers;
+use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
-class $CLASS$ extends Controller
+class slugController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('$LOWER_NAME$::index');
+        return view('abedalqader\str_slug::index');
     }
 
     /**
@@ -22,37 +18,37 @@ class $CLASS$ extends Controller
      */
     public function create()
     {
-        return view('$LOWER_NAME$::create');
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request)
     {
         //
     }
 
     /**
-     * Show the specified resource.
+     * Display the specified resource.
      */
-    public function show($id)
+    public function show(string $id)
     {
-        return view('$LOWER_NAME$::show');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($id)
+    public function edit(string $id)
     {
-        return view('$LOWER_NAME$::edit');
+        //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id): RedirectResponse
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -60,7 +56,7 @@ class $CLASS$ extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(string $id)
     {
         //
     }
